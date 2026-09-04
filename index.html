@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arman Ahmed Taief</title>
+  <meta name="description" content="Portfolio of Arman Ahmed Taief — CSE student at BUBT. Explore my projects, skills, education, experience and certifications." />
+  <meta name="author" content="Arman Ahmed Taief" />
+  <meta name="theme-color" content="#0b1020" />
+  <meta property="og:title" content="Arman Ahmed Taief | Portfolio" />
+  <meta property="og:description" content="I'm a Computer Science student at BUBT with two years of hands-on experience in C, C++, Python, DSA, DBMS, OS, Computer Networks, SAD, and OOP. I've worked on multiple software engineering projects where I handled the full cycle — from planning and design to development, testing, and deployment. For me, coding isn't just theory; it's about building real solutions that actually work." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E👨‍💻%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Scroll indicator ===== -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- ===== Cursor glow (desktop only) ===== -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- ===== Preloader ===== -->
+  <div class="preloader" id="preloader">
+    <div class="loader-ring"></div>
+    <span>Taief</span>
+  </div>
+
+  <!-- ===== Header / Navbar ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">Taief<span>.</span></a>
+      <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#education">Education</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#achievements">Certifications</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <i class="fa-solid fa-sun icon-sun"></i>
+          <i class="fa-solid fa-moon icon-moon"></i>
+        </button>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="hero-text reveal">
+        <span class="hello-badge"><i class="fa-solid fa-hand-sparkles"></i> Hello, I'm</span>
+        <h1 class="name">Arman <span class="accent">Ahmed Taief</span></h1>
+        <p class="tagline-role" id="typed"></p>
+        <p class="tagline-desc">CSE student at BUBT, building practical software solutions with a strong foundation in programming, data, and machine learning.</p>
+        <div class="hero-cta">
+          <a href="assets/Arman-Ahmed-Taief-Resume.pdf" class="btn btn-primary" id="resumeBtn" download="Arman-Ahmed-Taief-Resume.pdf"><i class="fa-solid fa-download"></i> Download Resume</a>
+          <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/taiefahmed" aria-label="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/arman-ahmed-taief/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.facebook.com/taief01/" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://codeforces.com/profile/Taief" aria-label="Codeforces" target="_blank" rel="noopener"><i class="fa-solid fa-code"></i></a>
+          <a href="https://www.codechef.com/users/taief" aria-label="CodeChef" target="_blank" rel="noopener"><i class="fa-solid fa-utensils"></i></a>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="avatar-wrap">
+          <img src="images/taief-profile.jpg" alt="Portrait of Arman Ahmed Taief" onerror="this.classList.add('avatar-fallback'); this.removeAttribute('src');" />
+          <div class="floating-chip chip-1"><i class="fa-solid fa-code"></i> CSE @ BUBT</div>
+          <div class="floating-chip chip-2"><i class="fa-solid fa-laptop-code"></i> Programmer</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <a href="#about" aria-label="Scroll down"><i class="fa-solid fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Who I am</span>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="about-emoji"><i class="fa-solid fa-user-astronaut"></i></div>
+          <h3>A little about me</h3>
+          <p>
+            Hi, I'm <strong>Arman Ahmed Taief</strong>, a dedicated <strong>Computer Science and Engineering</strong> student
+            currently in my <strong>7th semester</strong> at
+            <strong>Bangladesh University of Business and Technology (BUBT)</strong> with a CGPA of <strong>3.40/4.0</strong>.
+          </p>
+          <p>
+            I love turning ideas into working software — from console-based systems to full-stack applications with data
+            science. I'm equally comfortable with logic-heavy programming and creative design, and I enjoy solving real-world
+            problems with clean, efficient code.
+          </p>
+          <p>My core coursework includes DSA, DBMS, OOP, operating systems, computer networks, system analysis and design, machine learning, compiler design, and microcontroller systems.</p>
+        </div>
+        <div class="about-card reveal" style="transition-delay:.1s">
+          <h3><i class="fa-solid fa-circle-info accent"></i> Quick Facts</h3>
+          <ul class="facts-list">
+            <li><span>Name</span> Arman Ahmed Taief</li>
+            <li><span>University</span> BUBT</li>
+            <li><span>Program</span> CSE</li>
+            <li><span>Semester</span> 7th</li>
+            <li><span>CGPA</span> 3.40 / 4.0</li>
+            <li><span>Email</span><a href="mailto:armanahmedtaief@gmail.com">armanahmedtaief@gmail.com</a></li>
+            <li><span>Location</span> Dhaka, Bangladesh</li>
+          </ul>
+        </div>
+        <div class="about-card reveal" style="transition-delay:.2s">
+          <h3><i class="fa-solid fa-heart accent"></i> Interests</h3>
+          <div class="interest-chips">
+            <span class="chip-tag"><i class="fa-solid fa-terminal"></i> Competitive Programming</span>
+            <span class="chip-tag"><i class="fa-solid fa-brain"></i> Machine Learning</span>
+            <span class="chip-tag"><i class="fa-solid fa-database"></i> Data Science</span>
+            <span class="chip-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> UI/UX &amp; Design</span>
+            <span class="chip-tag"><i class="fa-solid fa-people-group"></i> Team Leadership</span>
+            <span class="chip-tag"><i class="fa-solid fa-gamepad"></i> Gaming</span>
+            <span class="chip-tag"><i class="fa-solid fa-camera"></i> Photography</span>
+          </div>
+          <p class="about-note">"Code is like humor. When you have to explain it, it's bad." — my daily motto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">My toolbox</span>
+        <h2 class="section-title">Skills &amp; <span class="accent">Technologies</span></h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Programming Languages -->
+        <div class="skill-card reveal">
+          <div class="skill-card-head">
+            <i class="fa-solid fa-code"></i>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="bar-item">
+            <div class="bar-top"><span>C</span><span>85%</span></div>
+            <div class="bar"><span class="bar-fill" data-progress="85"></span></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-top"><span>C++</span><span>90%</span></div>
+            <div class="bar"><span class="bar-fill" data-progress="90"></span></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-top"><span>Python</span><span>80%</span></div>
+            <div class="bar"><span class="bar-fill" data-progress="80"></span></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-top"><span>Java</span><span>70%</span></div>
+            <div class="bar"><span class="bar-fill" data-progress="70"></span></div>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-card reveal" style="transition-delay:.1s">
+          <div class="skill-card-head">
+            <i class="fa-solid fa-database"></i>
+            <h3>Database</h3>
+          </div>
+          <div class="icon-grid">
+            <div class="icon-cell"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+            <div class="icon-cell"><i class="fa-solid fa-leaf"></i><span>MongoDB</span></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-top"><span>MySQL</span><span>78%</span></div>
+            <div class="bar"><span class="bar-fill" data-progress="78"></span></div>
+          </div>
+        </div>
+
+        <!-- Technical -->
+        <div class="skill-card reveal" style="transition-delay:.2s">
+          <div class="skill-card-head">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>Technical</h3>
+          </div>
+          <div class="icon-grid">
+            <div class="icon-cell"><i class="fa-brands fa-python"></i><span>Machine Learning</span></div>
+            <div class="icon-cell"><i class="fa-brands fa-meta"></i><span>Digital Marketing</span></div>
+            <div class="icon-cell"><i class="fa-solid fa-palette"></i><span>Graphic Design</span></div>
+            <div class="icon-cell"><i class="fa-brands fa-figma"></i><span>Canva Design</span></div>
+          </div>
+        </div>
+
+        <!-- Others -->
+        <div class="skill-card reveal" style="transition-delay:.3s">
+          <div class="skill-card-head">
+            <i class="fa-solid fa-layer-group"></i>
+            <h3>Development Tools</h3>
+          </div>
+          <div class="icon-grid">
+            <div class="icon-cell"><i class="fa-solid fa-code"></i><span>VSCode</span></div>
+            <div class="icon-cell"><i class="fa-brands fa-android"></i><span>Android Studio</span></div>
+            <div class="icon-cell"><i class="fa-solid fa-flask"></i><span>PyCharm</span></div>
+            <div class="icon-cell"><i class="fa-solid fa-book-open"></i><span>Jupyter Notebook</span></div>
+            <div class="icon-cell"><i class="fa-solid fa-chart-column"></i><span>MS Excel</span></div>
+            <div class="icon-cell"><i class="fa-solid fa-terminal"></i><span>Code::Blocks</span></div>
+            <div class="icon-cell"><i class="fa-solid fa-code"></i><span>IntelliJ IDEA</span></div>
+            <div class="icon-cell"><i class="fa-solid fa-cubes"></i><span>Anaconda</span></div>
+            <div class="icon-cell"><i class="fa-solid fa-cloud"></i><span>Google Colab</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">My work</span>
+        <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="project-icon"><i class="fa-solid fa-building-columns"></i></span>
+            <span class="project-badge">Flutter + Django</span>
+          </div>
+          <h3>CampusGo &mdash; University Campus Community Platform</h3>
+          <p>A cross-platform mobile app bringing together a community feed, book marketplace, job board, hostel directory, tuition exchange, study groups, direct messaging, and notifications. Built with a secure Django REST API, Firebase Authentication, server-side authorization, and a layered backend architecture.</p>
+          <div class="project-tech">
+            <span>Flutter</span><span>Django REST</span><span>MongoDB</span><span>Firebase</span><span>PyMongo</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="project-icon"><i class="fa-solid fa-users-gear"></i></span>
+            <span class="project-badge">C++</span>
+          </div>
+          <h3>SDP100 — Student Management System</h3>
+          <p>
+            A console-based student management system built purely with C++ (no external libraries). Features a secure
+            login with password masking, full CRUD operations with file I/O and CSV storage, and lightning-fast search by
+            ID or blood group — all wrapped in a clean console UI.
+          </p>
+          <div class="project-tech">
+            <span>C++</span><span>fstream</span><span>Structs</span><span>Arrays</span><span>String Manipulation</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-small" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View Code</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal" style="transition-delay:.1s">
+          <div class="project-top">
+            <span class="project-icon"><i class="fa-solid fa-chart-line"></i></span>
+            <span class="project-badge">Python + MySQL</span>
+          </div>
+          <h3>SDP200 — Student Result Analysis</h3>
+          <p>
+            A full-stack desktop app using Python Tkinter GUI with a MySQL backend. Machine learning models (Linear
+            Regression, Decision Tree) predict student grades, supported by 8+ visualization types (KDE, scatter, heatmap,
+            pie charts) via Matplotlib/Seaborn, plus real-time search with student profiling.
+          </p>
+          <div class="project-tech">
+            <span>Python</span><span>Tkinter</span><span>MySQL</span><span>Scikit-learn</span><span>Matplotlib</span><span>Seaborn</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-small" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View Code</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION TIMELINE ===== -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Academic journey</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 2022 — Present</span>
+            <h3>B.Sc. in Computer Science &amp; Engineering</h3>
+            <h4>Bangladesh University of Business and Technology (BUBT)</h4>
+            <p>Currently in <strong>7th semester</strong> &middot; CGPA <strong>3.40 / 4.0</strong></p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 2021 — 2022</span>
+            <h3>Higher Secondary Certificate (HSC)</h3>
+            <h4>Savar Laboratory College</h4>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 2019 — 2020</span>
+            <h3>Secondary School Certificate (SSC)</h3>
+            <h4>Ebac Public School</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Where I've worked</span>
+        <h2 class="section-title">Work <span class="accent">Experience</span></h2>
+      </div>
+      <div class="exp-grid">
+        <div class="exp-card reveal">
+          <div class="exp-company"><i class="fa-solid fa-hotel"></i> Holiday Inn Resorts</div>
+          <h3>Social Media Assistant</h3>
+          <span class="exp-date"><i class="fa-solid fa-calendar-days"></i> Mar 2020 — Nov 2020</span>
+          <ul>
+            <li>Managed social media accounts and created engaging content to grow audience.</li>
+            <li>Monitored brand presence and assisted with marketing campaigns.</li>
+          </ul>
+        </div>
+
+        <div class="exp-card reveal" style="transition-delay:.1s">
+          <div class="exp-company"><i class="fa-solid fa-bullhorn"></i> Express Digital Systems LLC, Dubai, UAE</div>
+          <h3>Sales Executive — Digital Marketing</h3>
+          <span class="exp-date"><i class="fa-solid fa-calendar-days"></i> Feb 2021 — Mar 2021</span>
+          <ul>
+            <li>Drove digital marketing sales and client relationship management.</li>
+            <li>Built marketing strategies and handled customer outreach for digital services.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Badges of learning</span>
+        <h2 class="section-title">Certifications &amp; <span class="accent">Achievements</span></h2>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card reveal">
+          <i class="fa-solid fa-bullhorn cert-icon"></i>
+          <h3>Digital Marketing</h3>
+          <span>SR Dream It</span>
+        </div>
+        <div class="cert-card reveal" style="transition-delay:.1s">
+          <i class="fa-solid fa-chart-simple cert-icon"></i>
+          <h3>Data Analysis with Python</h3>
+          <span>BUBT-TAFE</span>
+        </div>
+        <div class="cert-card reveal" style="transition-delay:.2s">
+          <i class="fa-solid fa-lightbulb cert-icon"></i>
+          <h3>SDP Project Showcasing &amp; Idea Pitching</h3>
+          <span>BASIS BUBT Chapter Club</span>
+        </div>
+        <div class="cert-card reveal" style="transition-delay:.3s">
+          <i class="fa-solid fa-palette cert-icon"></i>
+          <h3>Graphic Design</h3>
+          <span>SR Dream It</span>
+        </div>
+        <div class="cert-card reveal">
+          <i class="fa-brands fa-hackerrank cert-icon"></i>
+          <h3>Problem Solving (Basic)</h3>
+          <span>HackerRank</span>
+        </div>
+      </div>
+
+      <div class="section-head reveal" style="margin-top:3rem">
+        <span class="section-tag">Beyond the code</span>
+        <h2 class="section-title">Leadership &amp; <span class="accent">Languages</span></h2>
+      </div>
+      <div class="lead-lang-grid">
+        <div class="mini-card reveal">
+          <h3><i class="fa-solid fa-people-group accent"></i> Leadership</h3>
+          <ul>
+            <li><i class="fa-solid fa-check accent"></i> Sports Volunteer — Ebac Public School</li>
+            <li><i class="fa-solid fa-check accent"></i> Project Manager</li>
+            <li><i class="fa-solid fa-check accent"></i> Team Manager</li>
+          </ul>
+        </div>
+        <div class="mini-card reveal" style="transition-delay:.1s">
+          <h3><i class="fa-solid fa-language accent"></i> Languages</h3>
+          <div class="lang-bar-item">
+            <div class="lang-bar-top"><span>English</span><span>80%</span></div>
+            <div class="bar"><span class="bar-fill" data-progress="80"></span></div>
+          </div>
+          <div class="lang-bar-item">
+            <div class="lang-bar-top"><span>Hindi</span><span>70%</span></div>
+            <div class="bar"><span class="bar-fill" data-progress="70"></span></div>
+          </div>
+          <div class="lang-bar-item">
+            <div class="lang-bar-top"><span>Bangla</span><span>100%</span></div>
+            <div class="bar"><span class="bar-fill" data-progress="100"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Let's connect</span>
+        <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <a class="contact-item" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=armanahmedtaief%40gmail.com" target="_blank" rel="noopener">
+            <i class="fa-solid fa-envelope"></i>
+            <div><span>Email</span>armanahmedtaief@gmail.com</div>
+          </a>
+          <a class="contact-item" href="tel:+8801969135176">
+            <i class="fa-solid fa-phone"></i>
+            <div><span>Phone</span>+880 1969-135176</div>
+          </a>
+          <a class="contact-item" href="https://www.facebook.com/taief01/" target="_blank" rel="noopener">
+            <i class="fa-brands fa-facebook-f"></i>
+            <div><span>Facebook</span>@armanahmedtaief</div>
+          </a>
+          <a class="contact-item" href="https://www.linkedin.com/in/arman-ahmed-taief/" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <div><span>LinkedIn</span>linkedin.com/in/arman-ahmed-taief</div>
+          </a>
+          <a class="contact-item" href="https://github.com/taiefahmed" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github"></i>
+            <div><span>GitHub</span>github.com/taiefahmed</div>
+          </a>
+          <a class="contact-item" href="https://codeforces.com/profile/Taief" target="_blank" rel="noopener">
+            <i class="fa-solid fa-code"></i>
+            <div><span>Codeforces</span>codeforces.com/profile/Taief</div>
+          </a>
+          <a class="contact-item" href="https://www.codechef.com/users/taief" target="_blank" rel="noopener">
+            <i class="fa-solid fa-utensils"></i>
+            <div><span>CodeChef</span>codechef.com/users/taief</div>
+          </a>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" action="https://formsubmit.co/armanahmedtaief@gmail.com" method="POST" novalidate>
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+              <small class="error"></small>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+              <small class="error"></small>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+            <small class="error"></small>
+          </div>
+          <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">Taief<span>.</span></a>
+      <div class="footer-social">
+        <a href="https://github.com/taiefahmed" aria-label="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/arman-ahmed-taief/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/taief01/" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=armanahmedtaief%40gmail.com" aria-label="Compose an email in Gmail" target="_blank" rel="noopener"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p class="footer-text">Designed &amp; built by <strong>Arman Ahmed Taief</strong> &middot; &copy; <span id="year"></span> All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
